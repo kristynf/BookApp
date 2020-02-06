@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BookApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+//making inventory
         Book book_a = new Book();
         book_a.setAuthor("Karen Smith");
         book_a.setTitle("It's Tough to be Karen");
@@ -29,7 +29,7 @@ public class BookApp {
         double book_price = 0;
 
         System.out.println("Which book is being ordered?(book_a, book_b, book_c) ");
-        String book = sc.nextLine();
+        String book = sc.nextLine();//check if in stock before asking quantity
         if (book.equalsIgnoreCase("book_a")) {
             boolean x = book_a.isInStock();
             if (x == true) {
@@ -37,7 +37,7 @@ public class BookApp {
                 double quantity = sc.nextDouble();
                 sc.nextLine();
                 book_price = book_a.getPrice() * quantity;
-
+                //let user know book not available before dumping out of program
             }
             else {
                 System.out.println("I'm sorry, that book is not available.");

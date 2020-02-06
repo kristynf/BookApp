@@ -5,15 +5,17 @@ public class Book {
     private double price;
     private boolean isInStock;
 
-
+    //stock constructor
     public Book() {
 
     }
 
+    //overloaded constructor
     public Book(String title, String author, String description, int price, boolean isInStock) {
 
     }
 
+    //getters amd setters
     public String getTitle() {
         return title;
     }
@@ -58,10 +60,8 @@ public class Book {
         return getAuthor() + " " + getTitle() + " " + getDescription();
     }
 
-    /*public void price(){
-        System.out.println("The price of your order is: " +book_price);*/
-    }
 
+}
 
 
 
