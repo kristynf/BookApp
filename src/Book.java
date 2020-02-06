@@ -10,7 +10,7 @@ public class Book {
 
     }
 
-    public Book(String title,String author,String description,int price, boolean isInStock){
+    public Book(String title, String author, String description, int price, boolean isInStock) {
 
     }
 
@@ -54,18 +54,16 @@ public class Book {
         isInStock = inStock;
     }
 
-    public String getDisplayText(){
-        return getAuthor() +" "+ getTitle()+ " " + getDescription();
+    public String getDisplayText() {
+        return getAuthor() + " " + getTitle() + " " + getDescription();
     }
 
-    public int Price(){
-
-
-
-
+    /*public void price(){
+        System.out.println("The price of your order is: " +book_price);*/
     }
 
-}
+
+
 
    /* Create a method that returns the pricing for a requested number of books. Five books at $20.00 should return $100, if they are in stock.
         If they are not in stock, that should be handled appropriately (hint - you decide).*/
